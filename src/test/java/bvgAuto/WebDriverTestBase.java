@@ -15,7 +15,7 @@ public class WebDriverTestBase {
     private HashMap<Integer, Integer> testResults = new HashMap<>();
 
     static {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:Users/user/Downloads/chromedriver.exe");
     }
 
     @BeforeTest(alwaysRun = true)
@@ -24,8 +24,8 @@ public class WebDriverTestBase {
         browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    @AfterTest(alwaysRun = true)
-    public void finish() {
-        browser.close();
-    }
+//    @AfterTest(alwaysRun = true)
+//    public void finish() {
+//        browser.close();
+//    }
 }
