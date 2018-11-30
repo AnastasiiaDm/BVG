@@ -21,7 +21,7 @@ public class WebDriverTestBase {
     @BeforeTest(alwaysRun = true)
     public void setUp() {
         browser = new ChromeDriver(new ChromeOptions().addArguments("--start-maximized", "--incognito"));
-        browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
 //    @AfterTest(alwaysRun = true)

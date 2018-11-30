@@ -15,12 +15,24 @@ public class EmailMessager {
 
     private final By inputMailerName = By.cssSelector("input#identifierId");
     private final By inputMailerPassword = By.cssSelector( "input.whsOnd");
-@FindBy(css = "span.RveJvd")
+    private final By inputABSoftName = By.cssSelector("input.user");
+    private final By inputABSoftPassword = By.cssSelector( "input.pwd");
+
+
+    @FindBy(css = "span.RveJvd")
 private WebElement buttonEnterEmail;
     @FindBy(css = "content.CwaK9")
     private WebElement buttonEnterPassword;
     @FindBy(css = "tr.zA")
     private List<WebElement> allMessages;
+    @FindBy(css = "input#login")
+    private WebElement buttonLogin;
+
+//    @FindBy(css = "div.sorted_by_received")
+        @FindBy(css = "div.from_addr")
+
+    private List<WebElement> messages;
+
 
     public EmailMessager(WebDriver browser) {
         this.browser = browser;
@@ -28,9 +40,9 @@ private WebElement buttonEnterEmail;
 
 
     }
-    public void mailer(){
-        browser.get(bvgVars.mailerURL);
-        h.findAndFill(inputMailerName, bvgVars.mailerName);
+    public void mailerGmail(){
+        browser.get(bvgVars.gmailURL);
+        h.findAndFill(inputMailerName, bvgVars.gmailName);
         new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
                 .ignoring(NoSuchElementException.class).until(browser -> buttonEnterEmail).click();
 
@@ -39,12 +51,23 @@ private WebElement buttonEnterEmail;
         new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
                 .ignoring(NoSuchElementException.class, ElementNotVisibleException.class).until(browser -> inputMailerPassword);
 
-        h.findAndFill(inputMailerPassword, bvgVars.mailerPassword);
-        h.findAndFill(inputMailerName, bvgVars.mailerName);
+        h.findAndFill(inputMailerPassword, bvgVars.gmailPassword);
+        h.findAndFill(inputMailerName, bvgVars.gmailName);
 
 //        buttonEnterPassword.click();
 
         allMessages.get(0).click();
+
+    }
+    public void mailerABSoft() throws InterruptedException {
+        Thread.sleep(5000);
+        browser.get(bvgVars.abSoftURL);
+        h.findAndFill(inputABSoftName, bvgVars.bSoftName);
+        h.findAndFill(inputABSoftPassword, bvgVars.abSoftPassword);
+        buttonLogin.click();
+
+        System.out.println(messages.subList(0,3));
+
 
     }
 

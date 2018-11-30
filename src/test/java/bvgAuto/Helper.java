@@ -22,6 +22,6 @@ public class Helper {
     }
 
     public static String timeStamp() {
-        return new SimpleDateFormat("dd/MM/yy HH:mm").format(new Date());
+        return new SimpleDateFormat("dd/MM/yy HH:mm:ss").format(new Date());
     }
 }

@@ -1,6 +1,7 @@
 package bvgAuto.bvg;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,32 +13,38 @@ public class bvgTestsProd extends WebDriverTestBase{
     private MessageField messageField;
     private EmailMessager emailMessager;
 
+
     @BeforeClass(alwaysRun = true)
     public void initPages() {
         messageField = PageFactory.initElements(browser, MessageField.class);
         emailMessager = PageFactory.initElements(browser, EmailMessager.class);
+
 
         System.out.println("Jira Pages Initialized");
     }
 
 
     @Test(description = "1. Send message from Home page")
-    public void sendMessageAllFields() throws InterruptedException, AWTException {
+    public void homeAllFields() throws InterruptedException,  AWTException {
         browser.get(bvgVars.prodURL);
-
-        messageField.fillAllMessageFields();
+        messageField.homeAllFields();
     }
 
-    @Test(description = "2. Send message from Home page, Required fields", dependsOnMethods = "sendMessageAllFields")
-    public void sendMessageRequiredFields() throws InterruptedException {
-        messageField.fillRequiredMessageFields();
+    @Test(description = "2. Send message from Home page, Required fields", dependsOnMethods = "homeAllFields")
+    public void homeRequiredFields()  {
+        messageField.homeRequiredFields();
     }
 
-//    @Test(description = "3. Send message from Home page, all fields", dependsOnMethods = "sendMessageRequiredFields")
-//    public void receiveMessage(){
-//        emailMessager.mailer();
-//    }
-
-
-
+    @Test(description = "3. Send message from Home page, Required fields", dependsOnMethods = "homeRequiredFields")
+    public void contactUsAllFields() throws InterruptedException {
+        messageField.contactUsAllFields();
+    }
+    @Test(description = "4. Send message from Home page, Required fields", dependsOnMethods = "contactUsAllFields")
+    public void contactUsRequiredFields() {
+        messageField.contactUsRequiredFields();
+    }
+    @AfterTest(description = "5. Mail AB Soft")
+    public void receiveMessage() throws InterruptedException {
+        emailMessager.mailerABSoft();
+    }
 }

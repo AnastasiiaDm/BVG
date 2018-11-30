@@ -30,18 +30,13 @@ public class MessageField {
 //    @FindBy (css = "span.ajax-loader.is-active")
 //    private WebElement spanLoader;
 
-
-
     public MessageField(WebDriver browser) {
 
         this.browser = browser;
         this.h = new Helper(browser);
     }
 
-    public void fillAllMessageFields() throws InterruptedException, AWTException {
-
-        System.out.println("fillAllMessageFields start");
-
+    public void homeAllFields() throws InterruptedException, AWTException {
 //        ((JavascriptExecutor) browser).executeScript("arguments[0].scrollIntoView(true);", inputName);
 //        ((JavascriptExecutor) browser).executeScript("window.scrollBy(0,900)");
         Robot robot = new Robot();
@@ -55,36 +50,67 @@ public class MessageField {
         robot.mouseWheel(1);
         Thread.sleep(1500);
 
-        h.findAndFill(inputName, "Home page, all fields " + Helper.timeStamp());
+        String timeHomeAllFields  = Helper.timeStamp();
+        h.findAndFill(inputName, "Home page, all fields " + timeHomeAllFields);
         h.findAndFill(inputEmail, "test@gmail.com");
         h.findAndFill(inputTextMessage, "Test text message");
         buttonSend.click();
-//        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
-//                .ignoring(NoSuchElementException.class, ElementNotVisibleException.class).until(browser -> succesAlert).isDisplayed();
-        Thread.sleep(5000);
-        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
-                .ignoring(InvalidElementStateException.class).until(browser -> succesAlert).isDisplayed();
+//
+        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(50)).pollingEvery(Duration.ofSeconds(10))
+                .ignoring(NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println(succesAlert);
-        System.out.println("fillAllMessageFields complete");
+        System.out.println("Home page, all fields " + '\n' + timeHomeAllFields);
 
     }
-    public void fillRequiredMessageFields() throws InterruptedException {
-        System.out.println("fillRequiredMessageFields start");
+    public void homeRequiredFields() {
 
-        h.findAndFill(inputName, "Home page, no message body " + Helper.timeStamp());
+        String timeHomeRequiredFields  = Helper.timeStamp();
+
+        h.findAndFill(inputName, "Home page, no message body " + timeHomeRequiredFields);
         h.findAndFill(inputEmail, "test@gmail.com");
         buttonSend.click();
 
-        Thread.sleep(5000);
         new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
-                .ignoring(InvalidElementStateException.class).until(browser -> succesAlert).isDisplayed();
+                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println(succesAlert);
-        System.out.println("fillRequiredMessageFields complete");
+        System.out.println("Home page, no message body "  + '\n' + timeHomeRequiredFields);
+    }
+    public void contactUsAllFields() throws InterruptedException {
+        browser.get(bvgVars.contactUsURL);
+        Thread.sleep(2000);
+
+        String timeContactUsAllFields  = Helper.timeStamp();
+
+        h.findAndFill(inputName, "Contact Us page, all fields "  + timeContactUsAllFields);
+        h.findAndFill(inputEmail, "test@gmail.com");
+        h.findAndFill(inputTextMessage, "Test text message");
+        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
+                .ignoring(ElementNotVisibleException.class).until(browser -> buttonSend).click();
+//        buttonSend.click();
+//
+        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
+                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
+
+        Assert.assertTrue(succesAlert.isEnabled());
+        System.out.println("Contact Us page, all fields "  + '\n' + timeContactUsAllFields);
 
     }
+    public void contactUsRequiredFields(){
+        String currentTime  = Helper.timeStamp();
+
+        h.findAndFill(inputName, "Contact Us page, no message body " + currentTime);
+        h.findAndFill(inputEmail, "test@gmail.com");
+        buttonSend.click();
+
+        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(2))
+                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
+
+        Assert.assertTrue(succesAlert.isEnabled());
+        System.out.println("Contact Us page, no message body " + '\n' + currentTime);
+    }
+
+
 
 }
