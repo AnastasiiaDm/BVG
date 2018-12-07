@@ -10,20 +10,25 @@ import org.openqa.selenium.By;
 
 public class Login {
 
-    private  WebDriver browser;
+    private WebDriver browser;
     private Helper h;
 
-    private final By inputPassword = By.cssSelector( "input.enter_password");
+    private final By inputPassword = By.cssSelector("input.enter_password");
 
     public Login(WebDriver browser) {
         this.browser = browser;
         this.h = new Helper(browser);
-
-
     }
-    public void EnterSite(){
+
+    public void enterDev() {
         browser.get(bvgVars.devURL);
         h.findAndFill(inputPassword, bvgVars.password).submit();
         System.out.println("EnterSite success");
+    }
+
+    public void enterProd() {
+        browser.get(bvgVars.prodURL);
+
+
     }
 }

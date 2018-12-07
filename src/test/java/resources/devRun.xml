@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sanity Suite" verbose="0" group-by-instances="true">
+    <test name="FeedbackForm" verbose="1" group-by-instances="true">
+        <groups>
+            <run>
+                <exclude name="EnterProd"/>
+                <include name="LoginDev"/>
+                <include name="FeedbackForm.*"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="bvgAuto.bvg"/>
+        </packages>
+    </test>
+</suite>

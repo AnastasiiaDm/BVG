@@ -29,6 +29,9 @@ public class MessageField {
     private WebElement succesAlert;
 //    @FindBy (css = "span.ajax-loader.is-active")
 //    private WebElement spanLoader;
+    @FindBy (css = "li#menu-item-10311")
+    private WebElement menuButtonContactUs;
+    public String messageHomeAllFields;
 
     public MessageField(WebDriver browser) {
 
@@ -50,7 +53,7 @@ public class MessageField {
         robot.mouseWheel(1);
         Thread.sleep(1500);
 
-        String timeHomeAllFields  = Helper.timeStamp();
+        String timeHomeAllFields = Helper.timeStamp();
         h.findAndFill(inputName, "Home page, all fields " + timeHomeAllFields);
         h.findAndFill(inputEmail, "test@gmail.com");
         h.findAndFill(inputTextMessage, "Test text message");
@@ -60,11 +63,11 @@ public class MessageField {
                 .ignoring(NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println("Home page, all fields " + '\n' + timeHomeAllFields);
+        messageHomeAllFields = "Home page, all fields " + timeHomeAllFields;
+        System.out.println(messageHomeAllFields);
 
     }
     public void homeRequiredFields() {
-
         String timeHomeRequiredFields  = Helper.timeStamp();
 
         h.findAndFill(inputName, "Home page, no message body " + timeHomeRequiredFields);
@@ -75,10 +78,11 @@ public class MessageField {
                 .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println("Home page, no message body "  + '\n' + timeHomeRequiredFields);
+
+        System.out.println("Home page, no message body "  + timeHomeRequiredFields);
     }
     public void contactUsAllFields() throws InterruptedException {
-        browser.get(bvgVars.contactUsURL);
+        menuButtonContactUs.click();
         Thread.sleep(2000);
 
         String timeContactUsAllFields  = Helper.timeStamp();
@@ -94,7 +98,7 @@ public class MessageField {
                 .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println("Contact Us page, all fields "  + '\n' + timeContactUsAllFields);
+        System.out.println("Contact Us page, all fields "  + timeContactUsAllFields);
 
     }
     public void contactUsRequiredFields(){
@@ -108,7 +112,7 @@ public class MessageField {
                 .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println("Contact Us page, no message body " + '\n' + currentTime);
+        System.out.println("Contact Us page, no message body " + currentTime);
     }
 
 
