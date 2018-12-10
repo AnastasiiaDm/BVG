@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96363cbd-5b1e-4ec3-b0b9-d35313849450" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/devRun.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/prodRun.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bvgAuto/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/EmailMessager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/EmailMessager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsDev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/EmailMessager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/EmailMessager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/MessageField.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/MessageField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/bvgTestsDev.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bvgAuto/bvg/bvgTestsProd.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +25,6 @@
               <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#1646#1647#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,18 +33,18 @@
       <file leaf-file-name="EmailMessager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/EmailMessager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-214">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+            <state relative-caret-position="1564">
+              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3549#3550#0" expanded="true" />
-                <element signature="e#3597#3598#0" expanded="true" />
+                <element signature="e#4060#4061#0" expanded="true" />
+                <element signature="e#4108#4109#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devRun.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="devRun.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/resources/devRun.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -74,8 +56,8 @@
       <file leaf-file-name="MessageField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="103" column="39" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="39" />
+            <state relative-caret-position="408">
+              <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,13 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebDriverTestBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebDriverTestBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="29" selection-end-column="7" />
+              <caret line="29" column="5" selection-start-line="26" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,11 +127,11 @@
         <option value="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsDev.java" />
         <option value="$PROJECT_DIR$/src/test/java/resources/prodRun.xml" />
         <option value="$PROJECT_DIR$/src/test/java/resources/devRun.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java" />
         <option value="$PROJECT_DIR$/src/test/java/bvgAuto/Helper.java" />
         <option value="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java" />
         <option value="$PROJECT_DIR$/src/test/java/bvgAuto/bvg/EmailMessager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java" />
       </list>
     </option>
   </component>
@@ -169,8 +153,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,8 +210,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -416,7 +403,7 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.bvgTestsDev" />
+      <item itemvalue="TestNG.bvgTests" />
       <item itemvalue="TestNG.bvgTestsProd" />
       <item itemvalue="TestNG.D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" />
       <item itemvalue="TestNG.D:/Work/BVG/BVGAuto/src/test/java/resources/prodRun.xml" />
@@ -428,7 +415,6 @@
         <item itemvalue="TestNG.bvgTests.receiveMessage" />
         <item itemvalue="TestNG.D:/Work/BVG/BVGAuto/src/test/java/resources/prodRun.xml" />
         <item itemvalue="TestNG.bvgTestsProd" />
-        <item itemvalue="TestNG.bvgTestsDev" />
       </list>
     </recent_temporary>
   </component>
@@ -446,34 +432,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="bvgTests_receiveMessage - 2018.12.07 at 17h 57m 42s.xml">
-      <configuration name="bvgTests.receiveMessage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="bvgTests_receiveMessage - 2018.12.07 at 17h 58m 34s.xml">
-      <configuration name="bvgTests.receiveMessage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 00m 11s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 15h 51m 23s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 04m 58s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 15h 54m 42s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 10m 01s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 15h 59m 49s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 12m 34s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 16h 05m 44s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 14m 38s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 16h 09m 11s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 34m 30s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 16h 10m 54s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 39m 41s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 16h 15m 10s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.07 at 18h 41m 23s.xml">
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 16h 20m 26s.xml">
+      <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 16h 31m 39s.xml">
+      <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Work_BVG_BVGAuto_src_test_java_resources_devRun_xml - 2018.12.10 at 17h 34m 51s.xml">
       <configuration name="D:/Work/BVG/BVGAuto/src/test/java/resources/devRun.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -490,11 +476,12 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -506,7 +493,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -515,34 +501,80 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTests.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/EmailMessager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" column="39" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/devRun.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTests.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -566,6 +598,8 @@
           <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -583,6 +617,8 @@
           <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
             <element signature="e#543#544#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
           </folding>
@@ -595,8 +631,8 @@
           <caret line="31" column="36" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3549#3550#0" expanded="true" />
-            <element signature="e#3597#3598#0" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -607,30 +643,11 @@
           <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -654,6 +671,8 @@
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,6 +690,8 @@
           <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
             <element signature="e#543#544#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
           </folding>
@@ -683,8 +704,8 @@
           <caret line="31" column="36" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3549#3550#0" expanded="true" />
-            <element signature="e#3597#3598#0" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -695,14 +716,6 @@
           <caret line="39" column="7" selection-start-line="36" selection-start-column="5" selection-end-line="39" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,8 +736,8 @@
           <caret line="37" column="21" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3549#3550#0" expanded="true" />
-            <element signature="e#3597#3598#0" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,6 +748,8 @@
           <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="29" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -762,38 +777,21 @@
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
             <element signature="e#543#544#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,6 +802,8 @@
           <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -831,6 +831,8 @@
           <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
             <element signature="e#543#544#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
           </folding>
@@ -844,22 +846,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/devRun.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/prodRun.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/devRun.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/prodRun.fxml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgVars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -874,18 +862,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTestsProd.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -903,6 +880,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/devRun.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -917,38 +901,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/bvgTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/MessageField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="103" column="39" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -957,20 +923,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/bvg/EmailMessager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        <state relative-caret-position="1564">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3549#3550#0" expanded="true" />
-            <element signature="e#3597#3598#0" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/resources/devRun.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bvgAuto/WebDriverTestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="493">
+          <caret line="29" column="5" selection-start-line="26" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

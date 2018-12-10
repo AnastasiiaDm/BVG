@@ -24,8 +24,8 @@ public class WebDriverTestBase {
         browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-//    @AfterTest(alwaysRun = true)
-//    public void finish() {
-//        browser.close();
-//    }
+    @AfterTest(alwaysRun = true)
+    public void finish() {
+        browser.close();
+    }
 }

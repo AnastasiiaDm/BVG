@@ -32,6 +32,9 @@ public class MessageField {
     @FindBy (css = "li#menu-item-10311")
     private WebElement menuButtonContactUs;
     public String messageHomeAllFields;
+    public String messageHomeRequiredFields;
+    public String messageContactUsAllFields;
+    public String messageContactUsRequiredFields;
 
     public MessageField(WebDriver browser) {
 
@@ -63,6 +66,7 @@ public class MessageField {
                 .ignoring(NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
+
         messageHomeAllFields = "Home page, all fields " + timeHomeAllFields;
         System.out.println(messageHomeAllFields);
 
@@ -79,7 +83,8 @@ public class MessageField {
 
         Assert.assertTrue(succesAlert.isEnabled());
 
-        System.out.println("Home page, no message body "  + timeHomeRequiredFields);
+        messageHomeRequiredFields = "Home page, no message body "  + timeHomeRequiredFields;
+        System.out.println(messageHomeRequiredFields);
     }
     public void contactUsAllFields() throws InterruptedException {
         menuButtonContactUs.click();
@@ -98,7 +103,9 @@ public class MessageField {
                 .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println("Contact Us page, all fields "  + timeContactUsAllFields);
+
+        messageContactUsAllFields = "Contact Us page, all fields "  + timeContactUsAllFields;
+        System.out.println(messageContactUsAllFields);
 
     }
     public void contactUsRequiredFields(){
@@ -112,9 +119,8 @@ public class MessageField {
                 .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
 
         Assert.assertTrue(succesAlert.isEnabled());
-        System.out.println("Contact Us page, no message body " + currentTime);
+
+        messageContactUsRequiredFields = "Contact Us page, no message body " + currentTime;
+        System.out.println(messageContactUsRequiredFields);
     }
-
-
-
 }
