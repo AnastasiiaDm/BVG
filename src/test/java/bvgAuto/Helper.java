@@ -2,8 +2,6 @@ package bvgAuto;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -14,11 +12,9 @@ public class Helper {
         browser = currentBrowser;
     }
 
-    public WebElement findAndFill(By selector, String value) {
-        WebElement elem = browser.findElement(selector);
-
-        elem.sendKeys(value);
-        return elem;
+    public WebElement fill(WebElement selector, String value){
+        selector.sendKeys(value);
+        return selector;
     }
 
     public static String timeStamp() {

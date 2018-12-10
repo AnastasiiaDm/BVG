@@ -5,15 +5,14 @@ import bvgAuto.Helper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.By;
-
 
 public class Login {
 
     private WebDriver browser;
     private Helper h;
 
-    private final By inputPassword = By.cssSelector("input.enter_password");
+    @FindBy(css = "input.enter_password" )
+    private WebElement inputPassword;
 
     public Login(WebDriver browser) {
         this.browser = browser;
@@ -22,7 +21,7 @@ public class Login {
 
     public void enterDev() {
         browser.get(bvgVars.devURL);
-        h.findAndFill(inputPassword, bvgVars.password).submit();
+        h.fill(inputPassword, bvgVars.password).submit();
         System.out.println("EnterSite success");
     }
 

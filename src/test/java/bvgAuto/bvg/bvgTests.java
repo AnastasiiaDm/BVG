@@ -52,7 +52,7 @@ public class bvgTests extends WebDriverTestBase{
         messageField.contactUsRequiredFields();
     }
 
-    @Test(description = "5. Mail AB Soft", priority = 1, groups = { "Login", "FeedbackForm"})
+    @Test(description = "5. Mail AB Soft", dependsOnMethods = "contactUsRequiredFields", groups = { "Login", "FeedbackForm"})
     public void receiveMessage() throws InterruptedException {
         emailMessager.mailerABSoft();
     }
