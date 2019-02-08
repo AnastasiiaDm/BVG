@@ -64,21 +64,21 @@ public class MessageField {
         System.out.println(messageHomeAllFields);
     }
     
-    public void homeRequiredFields() {
-        String timeHomeRequiredFields  = Helper.timeStamp();
-
-        h.fill(inputName, "Home page, no message body " + timeHomeRequiredFields);
-        h.fill(inputEmail, "test@gmail.com");
-        buttonSend.click();
-
-        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(5))
-                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
-
-        Assert.assertTrue(succesAlert.isEnabled());
-
-        messageHomeRequiredFields = "Home page, no message body "  + timeHomeRequiredFields;
-        System.out.println(messageHomeRequiredFields);
-    }
+//    public void homeRequiredFields() {
+//        String timeHomeRequiredFields  = Helper.timeStamp();
+//
+//        h.fill(inputName, "Home page, no message body " + timeHomeRequiredFields);
+//        h.fill(inputEmail, "test@gmail.com");
+//        buttonSend.click();
+//
+//        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(5))
+//                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
+//
+//        Assert.assertTrue(succesAlert.isEnabled());
+//
+//        messageHomeRequiredFields = "Home page, no message body "  + timeHomeRequiredFields;
+//        System.out.println(messageHomeRequiredFields);
+//    }
 
     public void contactUsAllFields() throws InterruptedException {
         menuButtonContactUs.click();
@@ -101,19 +101,19 @@ public class MessageField {
         System.out.println(messageContactUsAllFields);
     }
 
-    public void contactUsRequiredFields(){
-        String currentTime  = Helper.timeStamp();
-
-        h.fill(inputName, "Contact Us page, no message body " + currentTime);
-        h.fill(inputEmail, "test@gmail.com");
-        buttonSend.click();
-
-        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(5))
-                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
-
-        Assert.assertTrue(succesAlert.isEnabled());
-
-        messageContactUsRequiredFields = "Contact Us page, no message body " + currentTime;
-        System.out.println(messageContactUsRequiredFields);
-    }
+//    public void contactUsRequiredFields(){
+//        String currentTime  = Helper.timeStamp();
+//
+//        h.fill(inputName, "Contact Us page, no message body " + currentTime);
+//        h.fill(inputEmail, "test@gmail.com");
+//        buttonSend.click();
+//
+//        new FluentWait<>(browser).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(5))
+//                .ignoring(InvalidElementStateException.class, NoSuchElementException.class).until(browser -> succesAlert).isDisplayed();
+//
+//        Assert.assertTrue(succesAlert.isEnabled());
+//
+//        messageContactUsRequiredFields = "Contact Us page, no message body " + currentTime;
+//        System.out.println(messageContactUsRequiredFields);
+//    }
 }

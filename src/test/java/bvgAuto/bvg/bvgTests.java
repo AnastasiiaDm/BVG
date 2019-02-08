@@ -38,21 +38,21 @@ public class bvgTests extends WebDriverTestBase{
         messageField.homeAllFields();
     }
 
-    @Test(description = "2. Send message from Home page, Required fields", dependsOnMethods = "homeAllFields", groups = { "Login", "FeedbackForm"})
-    public void homeRequiredFields()  {
-        messageField.homeRequiredFields();
-    }
+//    @Test(description = "2. Send message from Home page, Required fields", dependsOnMethods = "homeAllFields", groups = { "Login", "FeedbackForm"})
+//    public void homeRequiredFields()  {
+//        messageField.homeRequiredFields();
+//    }
 
-    @Test(description = "3. Send message from Home page, Required fields", dependsOnMethods = "homeRequiredFields", groups = { "Login", "FeedbackForm"})
+    @Test(description = "3. Send message from Home page, Required fields", dependsOnMethods = "homeAllFields", groups = { "Login", "FeedbackForm"})
     public void contactUsAllFields() throws InterruptedException {
         messageField.contactUsAllFields();
     }
-    @Test(description = "4. Send message from Home page, Required fields", dependsOnMethods = "contactUsAllFields", groups = { "Login", "FeedbackForm"})
-    public void contactUsRequiredFields() {
-        messageField.contactUsRequiredFields();
-    }
+//    @Test(description = "4. Send message from Home page, Required fields", dependsOnMethods = "contactUsAllFields", groups = { "Login", "FeedbackForm"})
+//    public void contactUsRequiredFields() {
+//        messageField.contactUsRequiredFields();
+//    }
 
-    @Test(description = "5. Mail AB Soft", dependsOnMethods = "contactUsRequiredFields", groups = { "Login", "FeedbackForm"})
+    @Test(description = "4. Mail AB Soft", dependsOnMethods = "contactUsAllFields", groups = { "Login", "FeedbackForm"})
     public void receiveMessage() throws InterruptedException {
         emailMessager.mailerABSoft();
     }
